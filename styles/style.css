@@ -21,9 +21,8 @@
   list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
-  border: none;
+.header__link {
+  border-bottom: 1px solid black;
 }
 
 .header__logo {
@@ -45,6 +44,7 @@
 
 .contacts_link {
   text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 .header__address {
@@ -73,17 +73,8 @@
 
 .slogan {
   padding-top: 165px;
-}
-
-.slogan, 
-.cover__description,
-.card-link {
   position: relative;
   z-index: 3;
-}
-
-.underlined__item {
-  border-bottom: 1px solid black;
 }
 
 .cover__title {
@@ -105,13 +96,11 @@
 .aligned-text_center {
   margin-left: 380px;
   margin-top: 15px;
-  letter-spacing: 30px;
 }
 
 .aligned-text_right {
   margin-left: 663px;
   margin-top: 17px;
-  letter-spacing: 30px;
 }
 
 .cover__description {
@@ -119,6 +108,8 @@
   align-items: center;
   width: 1000px;
   margin: 106px 50px 50px 50px;
+  position: relative;
+  z-index: 3;
 }
 
 .cover__description-text {
@@ -162,6 +153,9 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 334px;
   min-height: 596px;
@@ -185,12 +179,10 @@
 .card-link {
   height: 100%;
   min-height: 596px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .card__title {
+  position: relative;
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
@@ -200,13 +192,16 @@
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  z-index: 3;
 }
 
 .card__text {
+  position: relative;
   justify-self: flex-end;
   color: white;
   margin: auto 40px 48px 40px;
   font-size: 20px;
+  z-index: 3;
 }
 
 .lots__look-more-link {
@@ -282,6 +277,14 @@
   list-style: none;
 }
 
+.footer__link {
+    border-bottom: 1px solid black;
+}
+
+.list-item_no-bullit {
+  list-style: none;
+}
+
 .footer__social-list {
   justify-self: center;
   margin-left: 95px;
@@ -289,4 +292,8 @@
   justify-content: space-between;
   gap: 48px;
   list-style: none;
+}
+
+.link_active {
+  border: none;
 }

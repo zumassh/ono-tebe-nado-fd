@@ -13,9 +13,13 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit"><a>главная</a></li>
-          <li><a class="underlined__item">посмотреть лоты</a></li>
-          <li><a class="underlined__item">об аукционе</a></li>
+          <li class="header__item list-item_no-bullit">
+            <a class="header__link link_active">главная</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link">посмотреть лоты</a>
+          </li>
+          <li class="header__item"><a class="header__link">об аукционе</a></li>
         </ul>
       </nav>
       <a class="header__logo">
@@ -26,11 +30,9 @@
         />
       </a>
       <address class="address header__address">
-        <a href="tel:+99995555555" class="underlined__item contacts_link"
-          >+9 999 555 5555</a
+        <a href="tel:+99995555555" class="contacts_link">+9 999 555 5555</a
         ><br />
-        <a href="mailto:info@sobaka.ge" class="underlined__item contacts_link"
-          >info@sobaka.ge</a
+        <a href="mailto:info@sobaka.ge" class="contacts_link">info@sobaka.ge</a
         ><br />
         <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
@@ -40,7 +42,9 @@
         <div class="overlay"></div>
         <h1 class="slogan">
           <span class="cover__title aligned-text aligned-text_left">Оно</span>
-          <span class="cover__title aligned-text aligned-text_center">Тебе</span>
+          <span class="cover__title aligned-text aligned-text_center"
+            >Тебе</span
+          >
           <span class="cover__title aligned-text aligned-text_right">Надо</span>
         </h1>
         <div class="cover__description">
@@ -54,27 +58,27 @@
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <article class="card card_type_film">
-              <div class="overlay"></div>
-              <a class="card-link">
-                <h2 class="card__title">
+            <a class="card-link">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
-                </h2>
+                </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
-              </a>
-            </article>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <article class="card card_type_book">
-              <div class="overlay"></div>
-              <a class="card-link">
-                <h2 class="card__title">
+            <a class="card-link">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </h2>
+                </h3>
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
@@ -83,24 +87,24 @@
                   эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
                   Джеймса Джойса?
                 </p>
-              </a>
-            </article>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <article class="card card_type_picture">
-              <div class="overlay"></div>
-              <a class="card-link">
-                <h2 class="card__title">
+            <a class="card-link">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </h2>
+                </h3>
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
                   что это — одна из революционных работ Кандинского?
                 </p>
-              </a>
-            </article>
+              </article>
+            </a>
           </li>
         </ul>
         <a class="lots__look-more-link">посмотреть больше</a>
@@ -135,24 +139,22 @@
     </main>
     <footer class="footer">
       <address class="address">
-        <a href="tel:+99995555555" class="underlined__item contacts_link"
-          >+9 999 555 5555</a
+        <a href="tel:+99995555555" class="contacts_link">+9 999 555 5555</a
         ><br />
-        <a href="mail:info@sobaka.ge" class="underlined__item contacts_link"
-          >info@sobaka.ge</a
+        <a href="mail:info@sobaka.ge" class="contacts_link">info@sobaka.ge</a
         ><br />
         <span>наб. Принсенграхт 263- 265, Амстердам</span>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="footer__menu-list-item header__links-list-item_no-bullit">
-            <a>главная</a>
+          <li class="footer__item list-item_no-bullit">
+            <a class="footer__link link_active">главная</a>
           </li>
-          <li class="footer__menu-list-item">
-            <a class="underlined__item">посмотреть лоты</a>
+          <li class="footer__item">
+            <a class="footer__link">посмотреть лоты</a>
           </li>
-          <li class="footer__menu-list-item">
-            <a class="underlined__item">об аукционе</a>
+          <li class="footer__item">
+            <a class="footer__link">об аукционе</a>
           </li>
         </ul>
       </nav>
